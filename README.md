@@ -6,8 +6,8 @@ It can be used to cluster attributes based on usage and then perform logical or 
 
 This repo contains two separate procedures 
 
-AAGenerator.cpp 
-CAGenerator.cpp
+*  AAGenerator.cpp 
+*  CAGenerator.cpp
 
 AAGenerator takes the input of all attributes of a relation, a set of queries and their access frequencies at diﬀerent sites, and produces the output of an aﬃnity matrix AA
 
