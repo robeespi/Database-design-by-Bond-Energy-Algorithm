@@ -1,4 +1,4 @@
-# Database design by Bond Energy Algorithm
+# 1. Database design by Bond Energy Algorithm
 
 The bond energy algorithm (BEA) was developed to determine how to group data and how to physically place data on RDBMS.
 
@@ -17,3 +17,31 @@ the Attribute Aﬃnity is measured by the extended Otsuka-Ochiai coefﬁcient (h
 
 ![alt text](https://github.com/robeespi/Database-design-by-Bond-Energy-Algorithm/blob/main/bea.jpeg)
 
+# 2. Code Structure Overview
+
+AAGenerator.cpp 
+
+1. Accept three input text ﬁles in the order of Attributes (att), Queries (query) and Access Frequencies (acc) as command line arguments
+
+2. Read the features of the relation (att)
+
+3. Read the queries (qs)
+    
+4. Get attribute usage values (att,qs)
+    
+5. Read Access frequency matrix ACC
+    
+6. Filling the attribute affinity matrix AA (usage, ACC, size.att, qs.size)
+    
+7. Output: Printing out the required attribute aﬃnity matrix (AA). 
+    
+
+CAGenerator.cpp
+
+1.Accept  input affinity matrix (aa) as a command line argument
+
+2.Read the Affinity Matrix AA
+
+3.Calculate the Clustered Affinity Matrix CA by Bond Energy Algorithm (calculating the bond and contribution of a placement as 2 separated functions)
+
+4.Printing out Matrix CA
