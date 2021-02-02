@@ -23,22 +23,22 @@ AAGenerator.cpp
 
 1. Accept three input text ﬁles in the order of Attributes (att), Queries (query) and Access Frequencies (acc) as command line arguments
 
-2. Read the features of the relation (att)
+2. Read the features of the relation (att_2.txt)
 
-3. Read the queries (qs)
+3. Read the queries (query_2.txt)
     
-4. Get attribute usage values (att,qs)
+4. Get attribute usage values (att_2.txt,query_2.txt)
     
 5. Read Access frequency matrix ACC
     
-6. Filling the attribute affinity matrix AA (usage, ACC, size.att, qs.size)
+6. Filling the attribute affinity matrix AA (usage, acc_2.txt, att_2.size, query_2.size)
     
-7. Output: Printing out the required attribute aﬃnity matrix (AA). 
+7. Output: Printing out the required attribute aﬃnity matrix (AA----> aa_2.txt). 
     
 
 CAGenerator.cpp
 
-1.Accept  input affinity matrix (aa) as a command line argument
+1.Accept  input affinity matrix (aa_2.txt) as a command line argument
 
 2.Read the Affinity Matrix AA
 
